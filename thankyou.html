@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellings Capital | Your Consultation Request Has Been Received</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #B59959;
+            --gold-light: #C9AD6E;
+            --charcoal: #1B1B1B;
+            --dark-gray: #333333;
+            --off-white: #F7F5F0;
+            --white: #FFFFFF;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); }
+        .font-heading { font-family: 'Cormorant Garamond', serif; }
+        .bg-charcoal { background-color: var(--charcoal); }
+        .bg-off-white { background-color: var(--off-white); }
+        .bg-gold { background-color: var(--gold); }
+        .text-gold { color: var(--gold); }
+        .text-charcoal { color: var(--charcoal); }
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-1px);
+        }
+        @keyframes checkPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .check-pulse { animation: checkPulse 2s ease-in-out infinite; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-up { animation: fadeUp 0.6s ease-out forwards; }
+        .fade-up-delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .fade-up-delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .fade-up-delay-3 { animation-delay: 0.6s; opacity: 0; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-charcoal border-b border-gray-800 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="images/home_Wellings_Capital.png" alt="Wellings Capital" class="h-8 sm:h-10">
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold/20 text-gold">
+                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Application Received
+            </span>
+        </div>
+    </div>
+</nav>
+
+<!-- Confirmation Hero -->
+<section class="bg-charcoal py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Animated Checkmark -->
+        <div class="check-pulse w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-8 fade-up">
+            <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+        </div>
+
+        <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-4 fade-up">You Are In. Watch This Before Your Call.</h1>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-10 fade-up fade-up-delay-1">Your investor consultation request has been received. Before your call, watch the video below and review the materials on this page. Investors who prepare get significantly more out of their consultation.</p>
+
+        <!-- Thank You Video Placeholder -->
+        <div class="bg-black/40 rounded-lg aspect-video max-w-2xl mx-auto flex items-center justify-center border border-gray-700 mb-10 fade-up fade-up-delay-2">
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-8 h-8 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                </div>
+                <p class="text-gray-400 text-sm">Thank You Video from Paul Moore</p>
+            </div>
+        </div>
+
+        <!-- What Happens Next -->
+        <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto fade-up fade-up-delay-3">
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-6">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+                    <span class="text-gold font-bold">1</span>
+                </div>
+                <p class="text-white font-semibold text-sm mb-1">Right Now</p>
+                <p class="text-gray-400 text-xs">Watch the videos below and review who this is for</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-6">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+                    <span class="text-gold font-bold">2</span>
+                </div>
+                <p class="text-white font-semibold text-sm mb-1">Within 24 Hours</p>
+                <p class="text-gray-400 text-xs">Our team will reach out to confirm your call time</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-6">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+                    <span class="text-gold font-bold">3</span>
+                </div>
+                <p class="text-white font-semibold text-sm mb-1">Before Your Call</p>
+                <p class="text-gray-400 text-xs">Check your email for preparation details and reminders</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Prep Section -->
+<section class="bg-off-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Prepare for Success</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-charcoal">How to Get the Most From Your Consultation</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-5">
+                    <span class="text-gold font-heading text-xl font-bold">1</span>
+                </div>
+                <h3 class="font-semibold text-charcoal mb-2">Know Your Numbers</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Have a rough idea of how much capital you are considering investing. Our minimum is $50,000, but the conversation is different for $50K versus $500K.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-5">
+                    <span class="text-gold font-heading text-xl font-bold">2</span>
+                </div>
+                <h3 class="font-semibold text-charcoal mb-2">Clarify Your Goal</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Are you looking for quarterly income? Long-term growth? Tax advantages? Diversification? Knowing your priority helps us match you with the right fund.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-5">
+                    <span class="text-gold font-heading text-xl font-bold">3</span>
+                </div>
+                <h3 class="font-semibold text-charcoal mb-2">Bring Your Questions</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Write down anything you want to ask about our due diligence, asset classes, team, or fees. Nothing is off-limits. The call is a two-way conversation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breakout Videos -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Before Your Call</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-charcoal">Watch These Before Your Consultation</h2>
+            <p class="text-gray-500 mt-3 max-w-xl mx-auto">These short videos cover exactly how our process works, who we are the right fit for, and the most common questions our investors ask.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Video 1 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Getting Started</span>
+                    <h3 class="font-semibold text-charcoal mb-2">What Happens Before Your Call</h3>
+                    <p class="text-gray-500 text-sm">A quick overview of the consultation process, what to expect, and how to prepare.</p>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Qualification</span>
+                    <h3 class="font-semibold text-charcoal mb-2">Is This Right for You?</h3>
+                    <p class="text-gray-500 text-sm">Honest criteria for who Wellings Capital is built for, and who would be better served elsewhere.</p>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Our Process</span>
+                    <h3 class="font-semibold text-charcoal mb-2">How We Invest Your Capital</h3>
+                    <p class="text-gray-500 text-sm">The 3-step Wellings Capital process, from deal sourcing to distributions.</p>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Common Questions</span>
+                    <h3 class="font-semibold text-charcoal mb-2">Is Now a Good Time to Invest?</h3>
+                    <p class="text-gray-500 text-sm">How we think about market timing and why we focus on recession-resistant asset classes.</p>
+                </div>
+            </div>
+            <!-- Video 5 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Common Questions</span>
+                    <h3 class="font-semibold text-charcoal mb-2">What About Liquidity?</h3>
+                    <p class="text-gray-500 text-sm">An honest discussion about hold periods, redemption options, and when this is the right fit.</p>
+                </div>
+            </div>
+            <!-- Video 6 -->
+            <div class="bg-off-white rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-video bg-charcoal flex items-center justify-center relative">
+                    <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <span class="inline-block px-2 py-1 bg-gold/10 text-gold text-xs font-semibold rounded mb-3">Call Prep</span>
+                    <h3 class="font-semibold text-charcoal mb-2">3 Things to Know Before Your Call</h3>
+                    <p class="text-gray-500 text-sm">What to bring, what to expect, and how to make the most of your 30 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="bg-charcoal py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Your Team</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-white">Who You Will Be Speaking With</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-8 text-center">
+                <img src="images/about_img8.jpg" alt="Team Member" class="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-gold/30">
+                <h3 class="text-white font-semibold text-lg">Matt Epstein</h3>
+                <p class="text-gold text-sm mb-3">Director of Investor Relations</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Matt is your primary point of contact. He will walk you through the current fund offerings, answer your questions, and help you determine if this is the right fit.</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-8 text-center">
+                <img src="images/about_img7.jpg" alt="Paul Moore" class="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-gold/30">
+                <h3 class="text-white font-semibold text-lg">Paul Moore</h3>
+                <p class="text-gold text-sm mb-3">Founder & Managing Partner</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Paul founded Wellings Capital in 2015 after 100+ real estate investments. Author of two books and featured on 300+ podcasts including BiggerPockets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-charcoal py-16 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-10">
+            <div>
+                <img src="images/home_Wellings_Capital.png" alt="Wellings Capital" class="h-8 mb-4">
+                <p class="text-gray-400 text-sm leading-relaxed">Wellings Capital is a real estate private equity firm helping accredited investors protect and grow their wealth through private commercial real estate.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+                <p class="text-gray-400 text-sm mb-2">invest@wellingscapital.com</p>
+                <p class="text-gray-400 text-sm mb-2">(434) 455-0777</p>
+                <p class="text-gray-400 text-sm">14805 Forest Road, Suite 203<br>Forest, VA 24551</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/paul-moore-3255924" target="_blank" class="text-gray-400 hover:text-gold transition text-sm">LinkedIn</a>
+                    <a href="https://x.com/PaulMooreInvest" target="_blank" class="text-gray-400 hover:text-gold transition text-sm">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-10 pt-8">
+            <p class="text-gray-500 text-xs leading-relaxed">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Investment opportunities are available to accredited investors only. All investments carry risk, including potential loss of principal. Past performance does not guarantee future results. Securities offered through the applicable offering documents. Consult your financial, tax, and legal advisors before making any investment decisions.</p>
+            <p class="text-gray-600 text-xs mt-4">&copy; 2026 Wellings Capital. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

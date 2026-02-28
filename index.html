@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellings Capital | Recession-Resistant Commercial Real Estate for Accredited Investors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #B59959;
+            --gold-light: #C9AD6E;
+            --gold-dark: #9A7F44;
+            --charcoal: #1B1B1B;
+            --dark-gray: #333333;
+            --off-white: #F7F5F0;
+            --white: #FFFFFF;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); }
+        .font-heading { font-family: 'Cormorant Garamond', serif; }
+        .bg-charcoal { background-color: var(--charcoal); }
+        .bg-dark-gray { background-color: var(--dark-gray); }
+        .bg-off-white { background-color: var(--off-white); }
+        .bg-gold { background-color: var(--gold); }
+        .text-gold { color: var(--gold); }
+        .text-charcoal { color: var(--charcoal); }
+        .border-gold { border-color: var(--gold); }
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-1px);
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(27,27,27,0.88), rgba(27,27,27,0.92));
+        }
+        .step-content { display: none; }
+        .step-content.active {
+            display: block;
+            animation: fadeSlide 0.35s ease-out;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .option-btn {
+            border: 2px solid #d1d5db;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .option-btn:hover {
+            border-color: var(--gold);
+            background-color: rgba(181,153,89,0.08);
+        }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+        .faq-answer.open { max-height: 500px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-charcoal border-b border-gray-800 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="images/home_Wellings_Capital.png" alt="Wellings Capital" class="h-8 sm:h-10">
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#how-it-works" class="text-gray-300 hover:text-gold text-sm font-medium transition">How It Works</a>
+            <a href="#track-record" class="text-gray-300 hover:text-gold text-sm font-medium transition">Track Record</a>
+            <a href="#why-wellings" class="text-gray-300 hover:text-gold text-sm font-medium transition">Why Wellings</a>
+            <a href="#faq" class="text-gray-300 hover:text-gold text-sm font-medium transition">FAQ</a>
+            <a href="#qualify" class="btn-gold px-6 py-2.5 text-sm font-semibold tracking-wide uppercase">Schedule Consultation</a>
+        </div>
+        <div class="md:hidden">
+            <a href="#qualify" class="btn-gold px-4 py-2 text-xs font-semibold tracking-wide uppercase">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative bg-charcoal overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="images/home_img2.jpg" alt="Commercial real estate" class="w-full h-full object-cover opacity-30">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <!-- Left Column: Copy -->
+            <div class="text-white">
+                <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Wellings Capital | Private Real Estate Equity</p>
+                <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-6">Protect and Grow Your Wealth Through Recession-Resistant Commercial Real Estate</h1>
+                <p class="text-gray-300 text-lg leading-relaxed mb-8">Join 1,000+ accredited investors who trust Wellings Capital to manage over $500M in manufactured housing, multifamily, self-storage, and industrial real estate. $50,000 minimum. Quarterly distributions. Zero landlord headaches.</p>
+                <p class="text-gray-500 text-xs italic">All investments carry risk, including potential loss of principal. Past performance does not guarantee future results.</p>
+
+                <!-- VSL Placeholder -->
+                <div class="mt-8 bg-black/40 rounded-lg aspect-video flex items-center justify-center border border-gray-700">
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-8 h-8 text-gold ml-1" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+                        </div>
+                        <p class="text-gray-400 text-sm">Watch the Strategy Briefing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Qualification Form -->
+            <div id="qualify" class="bg-white rounded-lg shadow-2xl p-6 sm:p-8">
+                <h3 class="font-heading text-2xl font-semibold text-charcoal text-center mb-2">See If You Qualify</h3>
+                <p class="text-gray-500 text-sm text-center mb-6">Answer a few quick questions to determine if Wellings Capital is the right fit.</p>
+
+                <!-- Progress Bar -->
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs text-gray-400 mb-1">
+                        <span id="step-label-1">Step <span id="step-num-1">1</span> of 5</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5">
+                        <div id="progress-bar-1" class="bg-gold rounded-full h-1.5 transition-all duration-300" style="width:20%"></div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Accredited -->
+                <div id="form1-step1" class="step-content active">
+                    <p class="text-charcoal font-semibold mb-4">Are you an accredited investor?</p>
+                    <div class="space-y-3">
+                        <button onclick="selectOption(1,1,'Yes')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Yes</button>
+                        <button onclick="selectOption(1,1,'No')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">No</button>
+                        <button onclick="selectOption(1,1,'Not sure')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Not sure</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Capital -->
+                <div id="form1-step2" class="step-content">
+                    <p class="text-charcoal font-semibold mb-4">How much capital are you looking to invest this year?</p>
+                    <div class="space-y-3">
+                        <button onclick="selectOption(1,2,'$50K-$100K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$50K - $100K</button>
+                        <button onclick="selectOption(1,2,'$100K-$250K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$100K - $250K</button>
+                        <button onclick="selectOption(1,2,'$250K-$500K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$250K - $500K</button>
+                        <button onclick="selectOption(1,2,'$500K+')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$500K+</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Experience -->
+                <div id="form1-step3" class="step-content">
+                    <p class="text-charcoal font-semibold mb-4">What best describes your real estate investing experience?</p>
+                    <div class="space-y-3">
+                        <button onclick="selectOption(1,3,'New to passive RE')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I am new to passive real estate investing</button>
+                        <button onclick="selectOption(1,3,'1-2 syndications')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I have invested in 1-2 syndications before</button>
+                        <button onclick="selectOption(1,3,'3+ syndications')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I have invested in 3+ syndications</button>
+                        <button onclick="selectOption(1,3,'Currently in a fund')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I currently invest through a fund</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Timeline -->
+                <div id="form1-step4" class="step-content">
+                    <p class="text-charcoal font-semibold mb-4">When are you looking to make your next investment?</p>
+                    <div class="space-y-3">
+                        <button onclick="selectOption(1,4,'Within 30 days')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Immediately (within 30 days)</button>
+                        <button onclick="selectOption(1,4,'Within 90 days')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Within the next quarter</button>
+                        <button onclick="selectOption(1,4,'Within 6 months')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Within 6 months</button>
+                        <button onclick="selectOption(1,4,'Just researching')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Just researching for now</button>
+                    </div>
+                </div>
+
+                <!-- Step 5: Contact Info -->
+                <div id="form1-step5" class="step-content">
+                    <p class="text-charcoal font-semibold mb-4">Almost done. Where should we reach you?</p>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <input type="text" placeholder="First Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                            <input type="text" placeholder="Last Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                        <button onclick="window.location.href='/thankyou'" class="btn-gold w-full py-4 rounded-lg text-sm font-bold uppercase tracking-widest">Schedule My Consultation</button>
+                    </div>
+                    <p class="text-gray-400 text-xs text-center mt-3">Your information is secure. We never share your data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof Bar -->
+<section class="bg-off-white py-10 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-8">
+            <div>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gold">$500M+</p>
+                <p class="text-gray-500 text-sm mt-1">Portfolio Value</p>
+            </div>
+            <div>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gold">$200M+</p>
+                <p class="text-gray-500 text-sm mt-1">Investor Equity</p>
+            </div>
+            <div>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gold">1,000+</p>
+                <p class="text-gray-500 text-sm mt-1">Investors</p>
+            </div>
+            <div>
+                <p class="font-heading text-3xl sm:text-4xl font-bold text-gold">8</p>
+                <p class="text-gray-500 text-sm mt-1">Active Funds</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-50">
+            <span class="text-gray-400 text-sm font-medium">Featured on:</span>
+            <span class="text-gray-500 text-sm font-semibold">BiggerPockets</span>
+            <span class="text-gray-500 text-sm font-semibold">Fox Business</span>
+            <span class="text-gray-500 text-sm font-semibold">The Real Estate Guys</span>
+            <span class="text-gray-500 text-sm font-semibold">Physician on FIRE</span>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="bg-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Our Process</p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal">How Wellings Capital Works</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center p-6">
+                <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-gold font-heading text-2xl font-bold">1</span>
+                </div>
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">We Find the Deals</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">We focus on recession-resistant asset classes: manufactured housing, multifamily, self-storage, and small bay industrial. Assets people need in every economic cycle.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-gold font-heading text-2xl font-bold">2</span>
+                </div>
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">27-Step Due Diligence</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Site visits, financial analysis, background checks, reference calls, and legal review. We invest in 3-5 out of every 100 deals we evaluate.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-gold font-heading text-2xl font-bold">3</span>
+                </div>
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">Invest Online</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">The entire process takes about 15 minutes. From commitment to funding, everything is handled through our secure portal. Minimum: $50,000.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-gold font-heading text-2xl font-bold">4</span>
+                </div>
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">Distributions & Reports</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Monthly or quarterly distributions depending on the fund. Detailed quarterly reports on performance and portfolio updates.</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-400 text-xs mt-10 italic">All investments carry risk. Returns and distributions are not guaranteed.</p>
+    </div>
+</section>
+
+<!-- Founder Section -->
+<section class="bg-charcoal py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="images/about_img7.jpg" alt="Paul Moore, Founder of Wellings Capital" class="w-full max-w-md mx-auto rounded-lg shadow-xl">
+            </div>
+            <div class="text-white">
+                <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Meet the Founder</p>
+                <h2 class="font-heading text-3xl sm:text-4xl font-semibold mb-6">Paul Moore</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">Paul earned an engineering degree and MBA from Ohio State University. After five years at Ford Motor Company, he co-founded a staffing company that was sold to a publicly traded firm. He was a finalist for Ernst & Young's Entrepreneur of the Year two years in a row.</p>
+                <p class="text-gray-300 leading-relaxed mb-6">Since 2000, Paul has completed over 100 real estate investments and exits. He is the author of "The Perfect Investment" and "Storing Up Profits," and has appeared on more than 300 podcasts including BiggerPockets and Entrepreneur on Fire.</p>
+                <blockquote class="border-l-4 border-gold pl-5 py-2">
+                    <p class="text-gold italic font-heading text-xl">"We built Wellings Capital to be the kind of firm I wish existed when I was looking for a place to invest my own family's capital."</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Wellings Section -->
+<section id="why-wellings" class="bg-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Our Difference</p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal">Why 1,000+ Investors Trust Wellings Capital</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="p-8 bg-off-white rounded-lg">
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">Recession-Resistant Asset Classes</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Manufactured housing, multifamily, self-storage, and industrial properties have historically maintained occupancy and cash flow during downturns. We invest in what works, not what is trendy.</p>
+                <p class="text-gray-400 text-xs italic mt-3">Past performance does not guarantee future results.</p>
+            </div>
+            <div class="p-8 bg-off-white rounded-lg">
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">27-Step Due Diligence</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">We reject 95 out of every 100 deals we review. Property visits, financial modeling, background checks, reference verification, and legal review. Your capital is protected before it is invested.</p>
+            </div>
+            <div class="p-8 bg-off-white rounded-lg">
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">Manager Co-Investment</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Our partners invest their own capital alongside every investor. We do not just manage your money. We have skin in the game. Your interests and our interests are the same.</p>
+            </div>
+            <div class="p-8 bg-off-white rounded-lg">
+                <h3 class="font-heading text-xl font-semibold text-charcoal mb-3">Transparency and Reporting</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Quarterly reports. Regular email updates. Direct access to investor relations by phone and email. You never wonder what is happening with your investment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Track Record -->
+<section id="track-record" class="relative bg-charcoal py-20 md:py-28">
+    <div class="absolute inset-0">
+        <img src="images/home_img4.jpg" alt="Property" class="w-full h-full object-cover opacity-15">
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Results</p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">Our Track Record</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-8 text-center">
+                <p class="font-heading text-4xl font-bold text-gold mb-2">$500M+</p>
+                <p class="text-white font-semibold mb-2">Portfolio Value</p>
+                <p class="text-gray-400 text-sm">Across manufactured housing, multifamily, self-storage, and industrial properties nationwide.</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-8 text-center">
+                <p class="font-heading text-4xl font-bold text-gold mb-2">1,000+</p>
+                <p class="text-white font-semibold mb-2">Investors Served</p>
+                <p class="text-gray-400 text-sm">Accredited investors across all investment vehicles since 2015.</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-8 text-center">
+                <p class="font-heading text-4xl font-bold text-gold mb-2">11</p>
+                <p class="text-white font-semibold mb-2">Closed Funds</p>
+                <p class="text-gray-400 text-sm">Income Funds I-IV, Growth Fund I, DST offering, and multiple sidecar investments.</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 text-xs mt-8 italic">Portfolio value and investor counts are aggregate metrics. Individual investment outcomes vary. All investments carry risk.</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-off-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Investor Feedback</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-charcoal">What Our Investors Say</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mr-3">
+                        <span class="text-gold font-bold text-sm">CP</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-charcoal text-sm">Chadron P.</p>
+                        <p class="text-gray-400 text-xs">Wellings Capital Investor</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">"Paul and Benjamin are, in my opinion, the best of the best. Their communication is excellent and their due diligence process gives me real peace of mind about where my capital is invested."</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mr-3">
+                        <span class="text-gold font-bold text-sm">WC</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-charcoal text-sm">Wellings Capital Investor</p>
+                        <p class="text-gray-400 text-xs">Accredited Investor</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">"The quarterly reports are thorough and the team is always available when I have questions. I finally feel like I know what is happening with my money."</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mr-3">
+                        <span class="text-gold font-bold text-sm">WC</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-charcoal text-sm">Wellings Capital Investor</p>
+                        <p class="text-gray-400 text-xs">Accredited Investor</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">"After being burned by a previous sponsor, I was skeptical. Wellings Capital restored my trust in passive investing. The transparency and alignment are real, not just marketing words."</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-400 text-xs mt-8 italic">Testimonials reflect individual experiences. Results vary. These investors were not compensated for their statements. Individual results may differ.</p>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="relative bg-charcoal py-20 md:py-28">
+    <div class="absolute inset-0">
+        <img src="images/home_img15.jpg" alt="Property" class="w-full h-full object-cover opacity-10">
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-4">Ready to Protect and Grow Your Wealth?</h2>
+            <p class="text-gray-300 text-lg">Schedule a free, no-obligation investor consultation. Our team will walk you through the current fund offerings, answer your questions, and help you determine if Wellings Capital is the right fit.</p>
+        </div>
+
+        <!-- Second Form Instance -->
+        <div class="bg-white rounded-lg shadow-2xl p-6 sm:p-8">
+            <h3 class="font-heading text-2xl font-semibold text-charcoal text-center mb-2">See If You Qualify</h3>
+            <p class="text-gray-500 text-sm text-center mb-6">Answer a few quick questions to get started.</p>
+
+            <div class="mb-6">
+                <div class="flex justify-between text-xs text-gray-400 mb-1">
+                    <span id="step-label-2">Step <span id="step-num-2">1</span> of 5</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                    <div id="progress-bar-2" class="bg-gold rounded-full h-1.5 transition-all duration-300" style="width:20%"></div>
+                </div>
+            </div>
+
+            <div id="form2-step1" class="step-content active">
+                <p class="text-charcoal font-semibold mb-4">Are you an accredited investor?</p>
+                <div class="space-y-3">
+                    <button onclick="selectOption(2,1,'Yes')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Yes</button>
+                    <button onclick="selectOption(2,1,'No')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">No</button>
+                    <button onclick="selectOption(2,1,'Not sure')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Not sure</button>
+                </div>
+            </div>
+            <div id="form2-step2" class="step-content">
+                <p class="text-charcoal font-semibold mb-4">How much capital are you looking to invest this year?</p>
+                <div class="space-y-3">
+                    <button onclick="selectOption(2,2,'$50K-$100K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$50K - $100K</button>
+                    <button onclick="selectOption(2,2,'$100K-$250K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$100K - $250K</button>
+                    <button onclick="selectOption(2,2,'$250K-$500K')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$250K - $500K</button>
+                    <button onclick="selectOption(2,2,'$500K+')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">$500K+</button>
+                </div>
+            </div>
+            <div id="form2-step3" class="step-content">
+                <p class="text-charcoal font-semibold mb-4">What best describes your real estate investing experience?</p>
+                <div class="space-y-3">
+                    <button onclick="selectOption(2,3,'New')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I am new to passive real estate investing</button>
+                    <button onclick="selectOption(2,3,'1-2')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I have invested in 1-2 syndications before</button>
+                    <button onclick="selectOption(2,3,'3+')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I have invested in 3+ syndications</button>
+                    <button onclick="selectOption(2,3,'Fund')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">I currently invest through a fund</button>
+                </div>
+            </div>
+            <div id="form2-step4" class="step-content">
+                <p class="text-charcoal font-semibold mb-4">When are you looking to make your next investment?</p>
+                <div class="space-y-3">
+                    <button onclick="selectOption(2,4,'30 days')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Immediately (within 30 days)</button>
+                    <button onclick="selectOption(2,4,'90 days')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Within the next quarter</button>
+                    <button onclick="selectOption(2,4,'6 months')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Within 6 months</button>
+                    <button onclick="selectOption(2,4,'Researching')" class="option-btn w-full text-left px-5 py-4 rounded-lg text-sm font-medium text-charcoal">Just researching for now</button>
+                </div>
+            </div>
+            <div id="form2-step5" class="step-content">
+                <p class="text-charcoal font-semibold mb-4">Almost done. Where should we reach you?</p>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="text" placeholder="First Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                        <input type="text" placeholder="Last Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                    </div>
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-gold">
+                    <button onclick="window.location.href='/thankyou'" class="btn-gold w-full py-4 rounded-lg text-sm font-bold uppercase tracking-widest">Schedule My Consultation</button>
+                </div>
+                <p class="text-gray-400 text-xs text-center mt-3">Your information is secure. We never share your data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-white py-20 md:py-28">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Common Questions</p>
+            <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-charcoal">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-4">
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">What is the minimum investment?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">The minimum investment is $50,000 for most fund offerings.</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">Do I have to be an accredited investor?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">Yes. Wellings Capital investment opportunities are available to accredited investors only, as defined by SEC regulations. This means a net worth of $1M+ (excluding primary residence) or annual income of $200K+ ($300K+ for joint filers).</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">What types of properties does Wellings Capital invest in?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">We focus on recession-resistant asset classes: manufactured housing communities, multifamily properties, self-storage facilities, and small bay industrial. These property types have historically maintained occupancy and cash flow during economic downturns.</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">How long is the investment period?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">It depends on the fund. The Wellings Growth Fund II has a projected hold period of 8-10 years. The Wellings Evergreen Income Fund is open-ended with redemption options. Your consultation is the best time to discuss which structure fits your timeline.</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">Are returns guaranteed?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">No. No legitimate investment can guarantee returns. All investments carry risk, including potential loss of principal. Wellings Capital projects conservative potential returns based on documented historical data, but actual results may vary.</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">How often do I receive distributions?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">Distributions are paid monthly or quarterly, depending on the fund. Distributions typically begin within 3-6 months of your investment.</p>
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-lg">
+                <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-5 text-left">
+                    <span class="font-semibold text-charcoal text-sm">How is my investment protected?</span>
+                    <svg class="w-5 h-5 text-gold transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-answer px-5 pb-5">
+                    <p class="text-gray-500 text-sm leading-relaxed">Every deal goes through our 27-step due diligence process. Our partners invest alongside you. We provide quarterly reporting and direct access to our team. However, risk cannot be fully eliminated. Review the offering documents for full risk disclosures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-charcoal py-16 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-10">
+            <div>
+                <img src="images/home_Wellings_Capital.png" alt="Wellings Capital" class="h-8 mb-4">
+                <p class="text-gray-400 text-sm leading-relaxed">Wellings Capital is a real estate private equity firm helping accredited investors protect and grow their wealth through private commercial real estate.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+                <p class="text-gray-400 text-sm mb-2">invest@wellingscapital.com</p>
+                <p class="text-gray-400 text-sm mb-2">(434) 455-0777</p>
+                <p class="text-gray-400 text-sm">14805 Forest Road, Suite 203<br>Forest, VA 24551</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/paul-moore-3255924" target="_blank" class="text-gray-400 hover:text-gold transition text-sm">LinkedIn</a>
+                    <a href="https://x.com/PaulMooreInvest" target="_blank" class="text-gray-400 hover:text-gold transition text-sm">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-10 pt-8">
+            <p class="text-gray-500 text-xs leading-relaxed">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Investment opportunities are available to accredited investors only. All investments carry risk, including potential loss of principal. Past performance does not guarantee future results. Securities offered through the applicable offering documents. Consult your financial, tax, and legal advisors before making any investment decisions.</p>
+            <p class="text-gray-600 text-xs mt-4">&copy; 2026 Wellings Capital. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function selectOption(formNum, step, value) {
+    const nextStep = step + 1;
+    const totalSteps = 5;
+    document.getElementById(`form${formNum}-step${step}`).classList.remove('active');
+    document.getElementById(`form${formNum}-step${nextStep}`).classList.add('active');
+    document.getElementById(`step-num-${formNum}`).textContent = nextStep;
+    document.getElementById(`progress-bar-${formNum}`).style.width = ((nextStep / totalSteps) * 100) + '%';
+}
+
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('svg');
+    answer.classList.toggle('open');
+    icon.style.transform = answer.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0)';
+}
+</script>
+
+</body>
+</html>
